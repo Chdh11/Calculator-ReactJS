@@ -1,0 +1,104 @@
+@font-face {
+    font-family: MyFont;
+    src: url(Poppins-Regular.ttf);
+}
+body{
+    background:linear-gradient(to right,#5a5b5c, #111112)
+}
+.heading{
+    color: rgb(186, 178, 178);
+    font-size: 33px;
+    font-family: MyFont;
+    font-weight: 590;
+    margin:30px auto auto auto;
+    width: 320px;
+    text-align: left;
+}
+.heading span{
+    font-size: 15px;
+}
+.ending{
+    color: rgb(186, 178, 178);
+    font-size: 14px;
+    font-family:MyFont;
+    font-weight: 550;
+    margin:70px auto 20px auto;
+    width: 320px;
+    text-align: center;
+}
+.grid-container{
+    background-color: black;
+    border: none;
+    border-radius: 3px;
+    padding:0px 5px 15px 5px;
+    width: 320px;
+    margin: 20px auto 0px auto;
+    display:grid;
+    grid-template-columns: repeat(4,65px);
+    grid-template-rows: minmax(145px,auto);
+    grid-auto-rows: minmax(65px,auto);
+    grid-gap:10px;
+    justify-content: center;
+    align-content: center;
+    
+}
+.grid-container .output{
+    padding:70px 0px 17px 0px;
+    color: white;
+    grid-column: 1/-1;
+    justify-self: end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.grid-container .output .previous-input{
+    color: rgba(85, 83, 83, 0.958);
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 3px;
+    text-align: right;
+}
+.grid-container .output .current-input{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+}
+button{
+    border-radius: 50%;
+    border: none;
+    font-size: 17px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    width:60px;
+    height:60px;
+}
+
+.grid-container .digit{
+    background-color: rgb(35, 35, 35);
+    color:rgba(250, 248, 248, 0.77);
+    font-weight: 540;
+    font-size: 18px;
+}
+.grid-container .operation{
+    background-color: rgb(80, 79, 79);
+    color:white;
+    font-size: 20px;
+}
+.grid-container .delete{
+    background-color: rgb(80, 79, 79);
+    color:white;
+    font-size: 14px;
+}
+
+.grid-container .clear{
+    grid-column-start: 1;
+    background-color: rgb(80, 79, 79);
+    color:white;
+}
+.grid-container .evaluate{
+    background-color: rgb(244, 120, 43);
+    color:white;
+}
