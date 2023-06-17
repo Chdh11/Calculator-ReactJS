@@ -148,7 +148,7 @@ function App() {
   return (
     <div className="App">
       <div className='heading'>
-        Simple Calculator <span>&lt;Created using ReactJS&gt;</span>
+      Calculator 
       </div>
       <div className='grid-container'>
         <div className='output'>
